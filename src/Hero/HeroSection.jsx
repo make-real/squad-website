@@ -14,22 +14,28 @@ function HeroSection() {
             FEATURE FLAG GOES HERE
           </p>
           <h1 className="text-black text-center font-dela text-2xl md:text-6xl font-normal leading-[1.133]">
-          The only <span className="text-[#FB397F]"> Budget-friendly</span> platform for your team
+            The only <span className="text-[#FB397F]"> Budget-friendly</span>{" "}
+            platform for your team
           </h1>
           <p className="text-sm lg:text-lg max-w-[16rem] mx-auto md:max-w-xl md:mx-auto lg:max-w-2xl text-[#828282] text-center">
-            Millions of smart entrepreneurs are choosing the right way
+            Collaborate, Manage Tasks, and Boost Productivity – All in One
+            Solution.
           </p>
           <div className="flex items-center justify-center w-full max-w-xl mx-auto input-form lg:justify-start gap-x-1 lg:gap-x-5 mt-7">
             <div className="w-full">
               <input
                 type="text"
                 placeholder="Enter your email address"
-                className="py-2 px-5 lg:py-3 placeholder:text-sm rounded-lg w-full focus:outline-none ring-1 ring-[#0A071B] focus:ring-2 focus:ring-[#0A071B]"
+                className="py-2 px-5 lg:py-3 placeholder:text-sm rounded-lg w-full focus:outline-none  focus:ring-2 focus:ring-[#FB397F]"
               />
             </div>
-            <button className="bg-[#304EE6] text-white w-1/3 hover:shadow-lg border border-transparent hover:drop-shadow transition duration-200 lg:w-1/3 font-semibold text-xs lg:text-base rounded-lg px-5 py-3">
-              Browser
+            <button className="bg-[#FB397F] text-white w-1/3 hover:shadow-lg border border-transparent hover:drop-shadow transition duration-200 lg:w-1/3 font-semibold text-xs lg:text-base rounded-lg px-5 py-3">
+              Try it out
             </button>
+          </div>
+          {/* user  */}
+          <div>
+            
           </div>
         </div>
       </div>
