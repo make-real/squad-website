@@ -8,18 +8,18 @@ function HeroSection() {
   return (
     <div className="hero">
       <Navbar />
-      <div className="main-hero-section max-w-5xl flex flex-col gap-y-2 items-center justify-center mx-auto py-14 px-10 md:px-10 xl:px-0">
-        <div className="hero-content lg:px-5 flex flex-col gap-y-5">
-          <p className="tag mx-auto text-white font-semibold text-sm">
+      <div className="flex flex-col items-center justify-center max-w-5xl px-10 mx-auto main-hero-section gap-y-2 py-14 md:px-10 xl:px-0">
+        <div className="flex flex-col hero-content lg:px-5 gap-y-5">
+          <p className="mx-auto text-sm font-semibold text-white tag">
             FEATURE FLAG GOES HERE
           </p>
-          <h1 className="text-4xl text-black md:text-5xl xl:text-[60px] leading-[1.2] md:max-w-xl mx-auto text-center lg:max-w-3xl font-semibold">
-            Best way to sell your digital product
+          <h1 className="text-black text-center font-dela text-2xl md:text-6xl font-normal leading-[1.133]">
+          The only <span className="text-[#FB397F]"> Budget-friendly</span> platform for your team
           </h1>
           <p className="text-sm lg:text-lg max-w-[16rem] mx-auto md:max-w-xl md:mx-auto lg:max-w-2xl text-[#828282] text-center">
             Millions of smart entrepreneurs are choosing the right way
           </p>
-          <div className="input-form max-w-xl mx-auto w-full flex items-center justify-center lg:justify-start gap-x-1 lg:gap-x-5 mt-7">
+          <div className="flex items-center justify-center w-full max-w-xl mx-auto input-form lg:justify-start gap-x-1 lg:gap-x-5 mt-7">
             <div className="w-full">
               <input
                 type="text"
@@ -33,7 +33,7 @@ function HeroSection() {
           </div>
         </div>
       </div>
-      <div className="bg-gradient-to-r from-blue-600 to-red-300 flex items-center justify-center gap-5 p-10 max-w-6xl mx-auto rounded-none lg:rounded-2xl overflow-hidden">
+      <div className="flex items-center justify-center max-w-6xl gap-5 p-10 mx-auto overflow-hidden rounded-none bg-gradient-to-r from-blue-600 to-red-300 lg:rounded-2xl">
         <img src={heroImage1} alt="" />
         <img src={heroImage2} alt="" />
         <img src={heroImage3} alt="" />

@@ -2,7 +2,13 @@
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        'lexend' : 'Lexend',
+        'inter' : 'Inter',
+        'dela' : 'Dela Gothic One',
+      }
+    },
   },
   plugins: [],
 };
