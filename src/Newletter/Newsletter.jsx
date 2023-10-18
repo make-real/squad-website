@@ -2,26 +2,23 @@ import React from "react";
 
 function Newsletter() {
   return (
-    <section className="cta__section max-w-4xl mx-auto py-24 px-5 lg:px-0">
+    <section className="max-w-4xl px-5 py-24 mx-auto cta__section lg:px-0">
       <div
-        className=" bg-white p-10 rounded-2xl
-       mx-auto flex flex-col gap-y-5 justify-center items-center"
+        className="flex flex-col items-center justify-center p-10 mx-auto bg-white rounded-2xl gap-y-5"
       >
-        <h3 className="text-2xl md:text-3xl lg:text-4xl font-bold max-w-xl mx-auto text-black text-center">
+        <h3 className="max-w-3xl mx-auto text-2xl font-bold text-center text-black md:text-3xl lg:text-4xl font-dela">
           Be the first to know about new features, special offers, and more.
         </h3>
-        <p className="text-slate-500/70 font-[400] max-w-sm text-base mx-auto text-center">
-          We will get back to you when we are ready to explore your new world
-        </p>
-        <div className="input-form max-w-2xl mx-auto w-full flex flex-col md:flex-row gap-y-2 items-center justify-center lg:justify-start gap-x-1 lg:gap-x-5 mt-7">
+       
+        <div className="flex flex-col items-center justify-center w-full max-w-xl mx-auto input-form md:flex-row gap-y-2 lg:justify-start gap-x-1 lg:gap-x-5 mt-7">
           <div className="w-full">
             <input
               type="text"
               placeholder="Enter your email address"
-              className="py-2 px-5 lg:py-3 bg-[#fcfcfc] placeholder:text-sm placeholder:font-semibold placeholder:text-black rounded-lg w-full focus:outline-none ring-1 ring-[#0A071B] focus:ring-2 focus:ring-[#0A071B]"
+              className="py-2 px-5 lg:py-3 placeholder:text-sm rounded-lg w-full focus:outline-none bg-[#F7F7F7] font-dm-sans focus:ring-2 focus:ring-[#FB397F]"
             />
           </div>
-          <button className="bg-[#304EE6] text-white w-full md:w-1/2 hover:shadow-lg hover:drop-shadow transition duration-200 lg:w-1/3 font-semibold text-sm md:text-base lg:text-base rounded-lg py-2 px-5 lg:py-3">
+          <button className="bg-[#FB397F] text-white min-w-fit w-1/3 hover:shadow-lg border border-transparent hover:drop-shadow transition duration-200 lg:w-1/3 font-semibold text-xs lg:text-base rounded-lg px-5 py-3">
             Send an Email
           </button>
         </div>

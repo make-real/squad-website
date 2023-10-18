@@ -7,6 +7,8 @@ export default {
         'lexend' : 'Lexend',
         'inter' : 'Inter',
         'dela' : 'Dela Gothic One',
+        'dm-sans' : 'DM Sans',
+        'monrope' : 'Manrope'
       }
     },
   },

@@ -1,52 +1,67 @@
 import React from "react";
-import money from "../assets/money.svg";
-import box from "../assets/box.svg";
-import heart from "../assets/heart.svg";
-import globe from "../assets/globe.svg";
-import benefitImag from "../assets/benefitImg.svg";
+import money from "../assets/feature-icon/icon-1.png";
+import box from "../assets/feature-icon/icon-2.png";
+import heart from "../assets/feature-icon/icon-3.png";
+import globe from "../assets/feature-icon/icon-4.png";
+import benefitImag from "../assets/shots/feature.png";
 
 function BenefitSection() {
   const benefitSectionData = [
     {
       image: money,
-      title: "Post Project",
-      description: "Build a shortlist of agencies to evaluate or contact.",
+      title: "Simplify Task Management",
+      description: "Achieve Team Goals Faster with Our User-Friendly Task Manager.",
     },
     {
       image: box,
-      title: "Find & hire",
+      title: "Streamlined File Management",
       description:
-        "Share your project with agencies using this simple briefing template.",
+        "Effortlessly Share and Access Documents Across Your Squad",
     },
     {
       image: heart,
-      title: "Award & pay",
-      description: "Examples of what real briefs and budgets look like.",
+      title: "Effortless Communication",
+      description: "Seamless Project Chat, Task Chat, and One-on-One Messaging and Meetings.",
     },
     {
       image: globe,
-      title: "Work & approves",
+      title: "Meeting Management Made Simple",
       description:
-        "Get recommendations from people who have worked with agencies.",
+        "Effortlessly Schedule and Manage Meetings with Anyone",
     },
   ];
   return (
-    <section className="benefit__section relative overflow-hidden">
-      <div className="max-w-5xl mx-auto py-10 grid md:grid-cols-2 gap-y-10 md:gap-y-10 lg:py-14 px-10">
-        <div className="hidden lg:flex absolute top-10 -right-10 overflow-hidden">
-          <img src={benefitImag} alt="" />
+    <section className="overflow-hidden benefit__section">
+      <div className="text-black text-left max-w-6xl pt-16 px-5 md:px-0 mx-auto font-dela  text-2xl font-normal leading-[113.3%]">Features</div>
+
+      <div className="relative grid max-w-6xl px-5 py-10 mx-auto md:px-0 md:grid-cols-2 gap-y-10 md:gap-y-10 lg:py-14">
+        <div className="absolute hidden overflow-hidden lg:block top-10 -right-24">
+          {/* <img src={benefitImag} alt="" /> */}
+          <div className="flex items-center justify-center gap-3 py-[14px] px-[28px] bg-[#FDFDFD] rounded-md shadow-md">
+              <div className="">
+                <p className="text-[#FB397F] text-lg font-monrope font-bold">Try for free</p>
+                <p className="text-[#242424] font-monrope font-semibold">*No credit card required</p>
+              </div>
+              <button className="flex w-[58px] h-[58px] justify-center items-center rounded-full bg-[#FB397F]">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="11" viewBox="0 0 18 11" fill="none">
+                <path d="M0.926392 6.57024H14.1615L11.0125 9.67222L12.3488 11L17.9264 5.50572L12.3488 0L11.0125 1.32778L14.1499 4.40687H0.926392V6.57024Z" fill="white"/>
+                </svg>
+              </button>
+          </div>
         </div>
+        <img src={benefitImag} alt="" className="absolute top-40 -right-64 h-[192px] rounded-xl hidden overflow-hidden lg:block"/>
+
         {benefitSectionData.map((item, index) => (
           <div
             key={index}
-            className="flex flex-col gap-y-5 items-start justify-between"
+            className="flex flex-col items-start justify-between gap-y-5 font-dm-sans"
           >
             <div>
-              <img src={item.image} alt="" />
+              <img src={item.image} alt="" className="h-[51px]"/>
             </div>
-            <div className="flex max-w-xs mx-0 flex-col gap-y-2 items-start justify-start">
-              <h2 className="font-bold text-xl text-black">{item.title}</h2>
-              <p className="font-medium text-sm text-slate-400/80">
+            <div className="flex flex-col items-start justify-start max-w-xs mx-0 gap-y-2">
+              <h2 className="text-xl font-bold text-black">{item.title}</h2>
+              <p className="text-sm font-medium text-slate-400/80">
                 {item.description}
               </p>
             </div>
