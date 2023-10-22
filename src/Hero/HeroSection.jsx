@@ -42,24 +42,30 @@ function HeroSection() {
           {/* user  */}
           <div className="relative flex justify-center gap-12 mx-auto my-10 md:gap-2">
               <div className="flex items-start -space-x-3 mt-13">
-                  <img src={ellipse1} alt="" className="relative z-10 w-7 h-7 border-2 border-white rounded-full bg-[#F9CF7F] bg-cover bg-center bg-no-repeat"/>
-                  <img src={ellipse2} alt="" className="relative z-10 w-7 h-7 border-2 border-white rounded-full bg-[#4DA8CC] bg-cover bg-center bg-no-repeat"/>
-                  <img src={ellipse3} alt="" className="relative z-10 w-7 h-7 border-2 border-white rounded-full bg-[#F09B83] bg-cover bg-center bg-no-repeat"/>
-                  <img src={ellipse4} alt="" className="relative z-10 w-7 h-7 border-2 border-white rounded-full bg-[#E6BF9F] bg-cover bg-center bg-no-repeat"/>
-                  <div class="relative z-10 w-7 h-7 rounded-full border-2 border-white bg-[#E7EAFF] flex items-center justify-center"><p className="text-[9px] font-bold text-center text-blue-500 font-inter">100+</p></div>
+                  <img src={ellipse2} alt="" className="relative z-10 w-10 h-10 border-2 border-white rounded-full bg-[#4DA8CC] bg-cover bg-center bg-no-repeat"/>
+                  <img src={ellipse1} alt="" className="relative z-10 w-10 h-10 border-2 border-white rounded-full bg-[#F9CF7F] bg-cover bg-center bg-no-repeat"/>
+                  <img src={ellipse3} alt="" className="relative z-10 w-10 h-10 border-2 border-white rounded-full bg-[#F09B83] bg-cover bg-center bg-no-repeat"/>
+                  <img src={ellipse4} alt="" className="relative z-10 w-10 h-10 border-2 border-white rounded-full bg-[#E6BF9F] bg-cover bg-center bg-no-repeat"/>
+                  <div class="relative z-10 w-10 h-10 rounded-full border-2 border-white bg-[#E7EAFF] flex items-center justify-center"><p className="text-[9px] font-bold text-center text-blue-500 font-inter">100+</p></div>
               </div>
-              <p className="text-[10px] font-medium font-dm-sans"><span className="text-black">More than 100+</span> <span className="text-black text-opacity-50">users are enjoying the</span> <span className="text-[#FB397F]">free trial</span><span className="text-black text-opacity-50">, </span><span className="inline text-black text-opacity-50 md:block">and they're loving the benefits!</span></p>
+              <p className="text-[14px] font-medium font-dm-sans"><span className="text-black">More than 100+</span> <span className="text-black text-opacity-50">users are enjoying the</span> <span className="text-[#FB397F]">free trial</span><span className="text-black text-opacity-50">, </span><span className="inline text-black text-opacity-50 md:block">and they're loving the benefits!</span></p>
           </div>
         </div>
       </div>
-      <div className="max-w-6xl gap-5 p-10 mx-auto overflow-hidden rounded-none bg-gradient-to-r from-blue-300 to-red-300 lg:rounded-2xl">
-        <div className="flex gap-10">
-        <img src={heroImage1} alt="" className="h-[192px] rounded-xl"/>
-        <img src={heroImage2} alt="" className="h-[192px] rounded-xl"/>
-        <img src={heroImage3} alt="" className="h-[192px] rounded-xl"/>
-        <img src={heroImage2} alt="" className="h-[192px] rounded-xl"/>
-        <img src={heroImage4} alt="" className="h-[192px] rounded-xl"/>
+      <div className="relative max-w-4xl mx-auto overflow-x-clip">
+        <div className="absolute w-[96%] h-full bg-white bg-opacity-80 -z-10 -top-[15px] left-[50%] -translate-x-1/2 rounded-2xl"></div>
+        <div className="absolute w-[92%] h-full bg-white bg-opacity-50 -z-10 -top-[30px] left-[50%] -translate-x-1/2 rounded-2xl"></div>
+        <div className="absolute w-[88%] h-full bg-white bg-opacity-20 -z-10 -top-[45px] left-[50%] -translate-x-1/2 rounded-2xl"></div>
+        <div className="p-10 mx-auto rounded-none bg-gradient-to-r from-blue-300 to-red-300 lg:rounded-2xl">
+          <div className="flex gap-10">
+          <img src={heroImage1} alt="" className="h-[192px] rounded-xl"/>
+          <img src={heroImage2} alt="" className="h-[192px] rounded-xl"/>
+          <img src={heroImage3} alt="" className="h-[192px] rounded-xl"/>
+          <img src={heroImage2} alt="" className="h-[192px] rounded-xl"/>
+          <img src={heroImage4} alt="" className="h-[192px] rounded-xl"/>
+          </div>
         </div>
+        <div className="absolute -top-10 -z-20 left-[50%] -translate-x-1/2 h-72 w-72 bg-[#AE92FE] filter blur-[90px] rounded-full"></div>
       </div>
     </div>
   );

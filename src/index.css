@@ -106,6 +106,54 @@
     z-index: -1;
     border-radius: 30px;
   }
+  /* First Layer */
+/* .layer::before {
+  content: "";
+  position: absolute;
+  width: 96%;
+  height: 100%;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.80);
+  top: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 20;
+} */
+
+/* Second Layer */
+/* .layer::after {
+  content: "";
+  position: absolute;
+  width: 92%;
+  height: 100%;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.50);
+  top: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+} */
+
+/* Third Layer */
+/* .layer::before {
+  content: "";
+  position: absolute;
+  width: 88%;
+  height: 100%;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.20);
+  top: -45px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+} */
+
+/* .layer > * {
+  position: relative;
+  z-index: 100 !important;
+} */
+
+ 
 
   /* Mobile resoinsive */
   @media screen and (max-width: 768px) {

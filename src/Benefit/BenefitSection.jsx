@@ -32,11 +32,10 @@ function BenefitSection() {
   ];
   return (
     <section className="overflow-hidden benefit__section">
-      <div className="text-black text-left max-w-6xl pt-16 px-5 md:px-0 mx-auto font-dela  text-2xl font-normal leading-[113.3%]">Features</div>
+      <div className="text-black text-left max-w-4xl pt-16 pb-5 px-5 mx-auto font-dela text-2xl font-normal leading-[113.3%]">Features</div>
 
-      <div className="relative grid max-w-6xl px-5 py-10 mx-auto md:px-0 md:grid-cols-2 gap-y-10 md:gap-y-10 lg:py-14">
-        <div className="absolute hidden overflow-hidden lg:block top-10 -right-24">
-          {/* <img src={benefitImag} alt="" /> */}
+      <div className="relative grid max-w-4xl px-5 py-10 mx-auto md:grid-cols-2 gap-y-10 md:gap-y-10 lg:py-14">
+        <div className="absolute top-0 hidden overflow-hidden lg:block -right-24">
           <div className="flex items-center justify-center gap-3 py-[14px] px-[28px] bg-[#FDFDFD] rounded-md shadow-md">
               <div className="">
                 <p className="text-[#FB397F] text-lg font-monrope font-bold">Try for free</p>
@@ -49,7 +48,7 @@ function BenefitSection() {
               </button>
           </div>
         </div>
-        <img src={benefitImag} alt="" className="absolute top-40 -right-64 h-[192px] rounded-xl hidden overflow-hidden lg:block"/>
+        <img src={benefitImag} alt="" className="absolute top-40 -right-72 h-[192px] rounded-xl hidden overflow-hidden lg:block"/>
 
         {benefitSectionData.map((item, index) => (
           <div
