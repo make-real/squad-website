@@ -25,7 +25,7 @@ function BenefitSection() {
     },
     {
       image: globe,
-      title: "Meeting Management Made Simple",
+      title: "Simple Meeting Management",
       description:
         "Effortlessly Schedule and Manage Meetings with Anyone",
     },
