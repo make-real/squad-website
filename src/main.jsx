@@ -2,13 +2,11 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App.jsx";
 import "./index.css";
-import ReactGA from "react-ga4";
+import { getAnalytics } from "firebase/analytics";
+import app from "./Firebase/firebase.config.js";
 
-ReactGA.initialize("G-BWY15NXMYS");
-ReactGA.send({ 
-  hitType: "pageview", 
-  page: window.location.pathname 
-});
+const analytics = getAnalytics(app);
+console.log(analytics);
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>

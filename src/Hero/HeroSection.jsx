@@ -46,7 +46,7 @@ function HeroSection() {
                   <img src={ellipse1} alt="" className="relative z-10 w-10 h-10 border-2 border-white rounded-full bg-[#F9CF7F] bg-cover bg-center bg-no-repeat"/>
                   <img src={ellipse3} alt="" className="relative z-10 w-10 h-10 border-2 border-white rounded-full bg-[#F09B83] bg-cover bg-center bg-no-repeat"/>
                   <img src={ellipse4} alt="" className="relative z-10 w-10 h-10 border-2 border-white rounded-full bg-[#E6BF9F] bg-cover bg-center bg-no-repeat"/>
-                  <div class="relative z-10 w-10 h-10 rounded-full border-2 border-white bg-[#E7EAFF] flex items-center justify-center"><p className="text-[9px] font-bold text-center text-blue-500 font-inter">100+</p></div>
+                  <div className="relative z-10 w-10 h-10 rounded-full border-2 border-white bg-[#E7EAFF] flex items-center justify-center"><p className="text-[9px] font-bold text-center text-blue-500 font-inter">100+</p></div>
               </div>
               <p className="text-[13px] text-center md:text-start md:text-[14px] font-medium font-dm-sans"><span className="text-black">More than 100+</span> <span className="text-black text-opacity-50">users are enjoying the</span> <span className="text-[#FB397F]">free trial</span><span className="text-black text-opacity-50">, </span><span className="inline text-black text-opacity-50 md:block">and they're loving the benefits!</span></p>
           </div>
