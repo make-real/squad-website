@@ -1,16 +1,41 @@
-import React from "react";
+import axios from "axios";
+import React, { useState } from "react";
+import toast from "react-hot-toast";
 import Navbar from "../Navbar";
+import ellipse1 from "../assets/ellipse/Ellipse-1.png";
+import ellipse2 from "../assets/ellipse/Ellipse-2.png";
+import ellipse3 from "../assets/ellipse/Ellipse-3.png";
+import ellipse4 from "../assets/ellipse/Ellipse-4.png";
 import heroImage1 from "../assets/shots/shot-1.png";
 import heroImage2 from "../assets/shots/shot-2.png";
 import heroImage3 from "../assets/shots/shot-3.png";
 import heroImage4 from "../assets/shots/shot-4.png";
-import ellipse1 from "../assets/ellipse/Ellipse-1.png"
-import ellipse2 from "../assets/ellipse/Ellipse-2.png"
-import ellipse3 from "../assets/ellipse/Ellipse-3.png"
-import ellipse4 from "../assets/ellipse/Ellipse-4.png"
 
 
 function HeroSection() {
+  
+  const [email, setEmail] = useState('');
+
+  const handleButtonClick = async () => {
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+    if (!emailRegex.test(email)) {
+      toast.error('Enter a valid email address');
+      return;
+    }
+    try {
+      const response = await axios.post('http://api.betasquad.io/api/admin/email-newsletters', { email });
+      console.log('status:', response.data);
+
+      // if (response.data && response.data.message === "Email processed successfully!") {
+      //   window.location.href = 'https://app.betasquad.io/'; 
+      // }
+
+    } catch (error) {
+      console.error('error:', error);
+    }
+  };
+
   return (
     <div className="hero">
       <Navbar />
@@ -30,12 +55,13 @@ function HeroSection() {
           <div className="flex items-center justify-center w-full max-w-xl mx-auto input-form lg:justify-start gap-x-1 lg:gap-x-5 mt-7">
             <div className="w-full">
               <input
-                type="text"
+                type="email"
+                onChange={(e) => setEmail(e.target.value)}
                 placeholder="Enter your email address"
                 className="py-2 px-5 lg:py-3 placeholder:text-sm rounded-lg w-full focus:outline-none bg-[#F7F7F7] font-dm-sans focus:ring-2 focus:ring-[#FB397F]"
               />
             </div>
-            <button className="bg-[#FB397F] text-white w-1/3 hover:shadow-lg min-w-fit border border-transparent hover:drop-shadow transition duration-200 lg:w-1/3 font-semibold text-xs lg:text-base rounded-lg px-5 py-3">
+            <button onClick={handleButtonClick} className="bg-[#FB397F] text-white w-1/3 hover:shadow-lg min-w-fit border border-transparent hover:drop-shadow transition duration-200 lg:w-1/3 font-semibold text-xs lg:text-base rounded-lg px-5 py-3">
               Try it out
             </button>
           </div>
