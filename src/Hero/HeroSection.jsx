@@ -20,24 +20,28 @@ function HeroSection() {
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
     if (!emailRegex.test(email)) {
-      toast.error('Enter a valid email address');
-      return;
+        toast.error('Enter a valid email address');
+        return;
     }
-    try {
-      const response = await axios.post('http://api.betasquad.io/api/public/email-newsletters', { email });
-      // console.log('status:', response.data);
 
-      if (response.data.message === "Successfully saved email!") {
-        window.location.href = 'https://app.betasquad.io/'; 
-      }
+    try {
+        const response = await axios.post('http://api.betasquad.io/api/public/email-newsletters', { email });
+
+        console.log(response);
+        console.log(response.data);
+        if (response && response.data && response.data.message === "Successfully saved email!") {
+            window.location.href = 'https://app.betasquad.io/';
+        }
 
     } catch (error) {
-      // console.error('error:', error.response.data.issue.email);
-      if (error.response.data.issue.email === "This email is already in stored!") {
-        toast.error('This email is already in stored!');
-      }
+        console.error('error:', error);
+
+        if (error.response && error.response.data && error.response.data.issue && error.response.data.issue.email === "This email is already in stored!") {
+            toast.error('This email is already in stored!');
+        }
     }
-  };
+};
+
 
   return (
     <div className="hero">
