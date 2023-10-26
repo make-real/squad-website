@@ -24,15 +24,18 @@ function HeroSection() {
       return;
     }
     try {
-      const response = await axios.post('http://api.betasquad.io/api/admin/email-newsletters', { email });
-      console.log('status:', response.data);
+      const response = await axios.post('http://api.betasquad.io/api/public/email-newsletters', { email });
+      // console.log('status:', response.data);
 
-      // if (response.data && response.data.message === "Email processed successfully!") {
-      //   window.location.href = 'https://app.betasquad.io/'; 
-      // }
+      if (response.data.message === "Successfully saved email!") {
+        window.location.href = 'https://app.betasquad.io/'; 
+      }
 
     } catch (error) {
-      console.error('error:', error);
+      // console.error('error:', error.response.data.issue.email);
+      if (error.response.data.issue.email === "This email is already in stored!") {
+        toast.error('This email is already in stored!');
+      }
     }
   };
 
