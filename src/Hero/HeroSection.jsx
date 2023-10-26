@@ -24,10 +24,10 @@ function HeroSection() {
       return;
     }
     try {
-      const response = await axios.post('http://api.betasquad.io/api/public/email-newsletters', { email });
+      const response = await axios.post('https://api.betasquad.io/api/public/email-newsletters', { email });
       // console.log('status:', response.data);
 
-      if (response.data.message === "Successfully saved email!") {
+      if (response?.data?.message === "Successfully saved email!") {
         window.location.href = 'https://app.betasquad.io/'; 
       }
 
