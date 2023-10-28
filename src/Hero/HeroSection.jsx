@@ -55,7 +55,7 @@ function HeroSection() {
             Collaborate, Manage Tasks, and Boost Productivity – All in One
             Solution.
           </p>
-          <div className="flex items-center justify-center w-full max-w-xl mx-auto input-form lg:justify-start gap-x-1 lg:gap-x-5 mt-7">
+          <div className="flex items-center justify-center w-full max-w-lg mx-auto input-form lg:justify-start gap-x-1 lg:gap-x-5 mt-7">
             <div className="w-full">
               <input
                 type="email"
@@ -68,8 +68,9 @@ function HeroSection() {
               Try it out
             </button>
           </div>
+          <h4 className="text-[14px] text-center text-black font-dm-sans">*No Credit Card Required.</h4>
           {/* user  */}
-          <div className="relative flex flex-col items-center justify-center gap-2 mx-auto my-10 md:items-start md:flex-row md:gap-2">
+          <div className="relative flex flex-col items-center justify-center gap-2 mx-auto mt-8 mb-10 md:items-start md:flex-row md:gap-2">
               <div className="flex items-start -space-x-3 mt-13">
                   <img src={ellipse2} alt="" className="relative z-10 w-10 h-10 border-2 border-white rounded-full bg-[#4DA8CC] bg-cover bg-center bg-no-repeat"/>
                   <img src={ellipse1} alt="" className="relative z-10 w-10 h-10 border-2 border-white rounded-full bg-[#F9CF7F] bg-cover bg-center bg-no-repeat"/>

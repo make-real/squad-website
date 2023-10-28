@@ -1,6 +1,6 @@
 import React from "react";
-import squadLogo from '../assets/squad.png'
-import mRealLogo from '../assets/make-real.png'
+import mRealLogo from '../assets/make-real.png';
+import squadLogo from '../assets/squad.png';
 
 function Footer() {
   return (
@@ -31,10 +31,10 @@ function Footer() {
             <img src={squadLogo} alt="Squad logo" className="h-[17px] w-[17px]"/>
             <p className="font-lexend text-base font-semibold text-[#0D1282]">Squad</p>
         </div>
-        <div className="flex items-center justify-center gap-[5px]">
+        <a href="https://makereal.io/" target="_blank" className="flex items-center justify-center gap-[5px]">
             <img src={mRealLogo} alt="Mahbub" className="h-[17px] w-[17px] rounded-full"/>
             <p className="text-[#3D5059] font-inter text-base font-semibold">makereal.io</p>
-        </div>
+        </a>
       </div>
       </div>
     </section>
