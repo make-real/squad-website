@@ -27,14 +27,14 @@ function HeroSection() {
       const response = await axios.post('https://api.betasquad.io/api/public/email-newsletters', { email });
       // console.log('status:', response.data);
 
-      if (response?.data?.message === "Successfully saved email!") {
+      if (response?.data?.message) {
         window.location.href = 'https://app.betasquad.io/'; 
       }
 
     } catch (error) {
       // console.error('error:', error.response.data.issue.email);
-      if (error?.response?.data?.issue?.email === "This email is already in stored!") {
-        toast.error('This email is already in stored!');
+      if (error?.response?.data?.issue?.email) {
+        window.location.href = 'https://app.betasquad.io/'; 
       }
     }
   };
