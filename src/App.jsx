@@ -3,7 +3,7 @@ import { Toaster } from 'react-hot-toast';
 import BenefitSection from "./Benefit/BenefitSection";
 import Footer from "./Footer/Footer";
 import HeroSection from "./Hero/HeroSection";
-import NewsLetter from "./Newsletter/Newsletter";
+import NewsLetter from "./NewsLetter/NewsLetter";
 
 function App() {
   return (
