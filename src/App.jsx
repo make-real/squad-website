@@ -3,7 +3,7 @@ import { Toaster } from 'react-hot-toast';
 import BenefitSection from "./Benefit/BenefitSection";
 import Footer from "./Footer/Footer";
 import HeroSection from "./Hero/HeroSection";
-import Newsletter from "./Newletter/Newsletter";
+import NewsLetter from "./Newsletter/Newsletter";
 
 function App() {
   return (
@@ -11,7 +11,7 @@ function App() {
       <Toaster/>
       <HeroSection />
       <BenefitSection />
-      <Newsletter />
+      <NewsLetter />
       <Footer />
     </div>
   );

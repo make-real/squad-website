@@ -1,7 +1,7 @@
 import axios from "axios";
 import React, { useState } from "react";
 
-function Newsletter() {
+function NewsLetter() {
   const [email, setEmail] = useState('');
 
   const handleButtonClick = async () => {
@@ -55,4 +55,4 @@ function Newsletter() {
   );
 }
 
-export default Newsletter;
+export default NewsLetter;
