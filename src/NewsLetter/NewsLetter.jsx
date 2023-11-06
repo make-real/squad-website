@@ -8,7 +8,7 @@ function NewsLetter() {
 
   const handleButtonClick = async () => {
 
-    logEvent(analytics, 'button_click', { action: 'Try now' });
+    logEvent(analytics, 'click');
     // console.log('button clicked');
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 

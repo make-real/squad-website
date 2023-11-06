@@ -20,7 +20,7 @@ function HeroSection() {
 
   const handleButtonClick = async () => {
 
-    logEvent(analytics, 'button_click', { action: 'Try it out' });
+    logEvent(analytics, 'click');
 
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 

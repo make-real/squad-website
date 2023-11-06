@@ -43,7 +43,7 @@ function BenefitSection() {
                 <p className="text-[#FB397F] text-lg font-monrope font-bold">Try for free</p>
                 <p className="text-[#242424] font-monrope font-semibold">*No credit card required</p>
               </div>
-              <a href="https://app.betasquad.io/" onClick={()=> {logEvent(analytics, 'button_click', { action: 'Try for free' });}} className="flex w-[58px] h-[58px] justify-center items-center rounded-full bg-[#FB397F]">
+              <a href="https://app.betasquad.io/" onClick={()=> {logEvent(analytics, 'click');}} className="flex w-[58px] h-[58px] justify-center items-center rounded-full bg-[#FB397F]">
                 <svg xmlns="http://www.w3.org/2000/svg" width="18" height="11" viewBox="0 0 18 11" fill="none">
                 <path d="M0.926392 6.57024H14.1615L11.0125 9.67222L12.3488 11L17.9264 5.50572L12.3488 0L11.0125 1.32778L14.1499 4.40687H0.926392V6.57024Z" fill="white"/>
                 </svg>
