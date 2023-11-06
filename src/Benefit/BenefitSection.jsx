@@ -1,9 +1,11 @@
+import { logEvent } from "firebase/analytics";
 import React from "react";
 import money from "../assets/feature-icon/icon-1.png";
 import box from "../assets/feature-icon/icon-2.png";
 import heart from "../assets/feature-icon/icon-3.png";
 import globe from "../assets/feature-icon/icon-4.png";
 import benefitImag from "../assets/shots/feature.png";
+import { analytics } from "../main";
 
 function BenefitSection() {
   const benefitSectionData = [

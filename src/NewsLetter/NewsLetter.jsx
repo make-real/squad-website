@@ -1,3 +1,4 @@
+import axios from "axios";
 import { logEvent } from "firebase/analytics";
 import React, { useState } from "react";
 import { analytics } from "../main";
@@ -29,6 +30,7 @@ function NewsLetter() {
         window.location.href = 'https://app.betasquad.io/'; 
       }
     }
+    
 
   };
 
