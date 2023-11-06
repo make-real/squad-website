@@ -1,10 +1,13 @@
-import axios from "axios";
+import { logEvent } from "firebase/analytics";
 import React, { useState } from "react";
+import { analytics } from "../main";
 
 function NewsLetter() {
   const [email, setEmail] = useState('');
 
   const handleButtonClick = async () => {
+
+    logEvent(analytics, 'button_click', { action: 'Try now' });
     // console.log('button clicked');
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
@@ -26,6 +29,7 @@ function NewsLetter() {
         window.location.href = 'https://app.betasquad.io/'; 
       }
     }
+
   };
 
   return (

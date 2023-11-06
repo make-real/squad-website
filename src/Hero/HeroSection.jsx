@@ -1,4 +1,5 @@
 import axios from "axios";
+import { logEvent } from "firebase/analytics";
 import React, { useState } from "react";
 import toast from "react-hot-toast";
 import Navbar from "../Navbar";
@@ -10,6 +11,7 @@ import heroImage1 from "../assets/shots/shot-1.png";
 import heroImage2 from "../assets/shots/shot-2.png";
 import heroImage3 from "../assets/shots/shot-3.png";
 import heroImage4 from "../assets/shots/shot-4.png";
+import { analytics } from "../main";
 
 
 function HeroSection() {
@@ -17,6 +19,9 @@ function HeroSection() {
   const [email, setEmail] = useState('');
 
   const handleButtonClick = async () => {
+
+    logEvent(analytics, 'button_click', { action: 'Try it out' });
+
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
     if (!emailRegex.test(email)) {
