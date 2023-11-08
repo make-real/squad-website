@@ -21,16 +21,16 @@ function NewsLetter() {
       // console.log('status:', response.data);
 
       if (response?.data?.message) {
-        window.location.href = 'https://app.betasquad.io/'; 
+        window.location.href = 'https://app.betasquad.io/';
       }
 
     } catch (error) {
       // console.error('error:', error.response.data.issue.email);
       if (error?.response?.data?.issue?.email) {
-        window.location.href = 'https://app.betasquad.io/'; 
+        window.location.href = 'https://app.betasquad.io/';
       }
     }
-    
+
 
   };
 
@@ -42,7 +42,7 @@ function NewsLetter() {
         <h3 className="max-w-4xl mx-auto text-2xl font-bold text-center text-black md:text-3xl lg:text-4xl font-dela">
           Collaborate, Manage Tasks, and Boost Productivity – All in One Solution.
         </h3>
-       
+
         <div className="flex flex-col items-center justify-center w-full max-w-lg mx-auto input-form md:flex-row gap-y-2 lg:justify-start gap-x-1 lg:gap-x-5 mt-7">
           <div className="w-full">
             <input
