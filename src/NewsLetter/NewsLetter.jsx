@@ -17,17 +17,17 @@ function NewsLetter() {
       return;
     }
     try {
-      const response = await axios.post('https://api.betasquad.io/api/public/email-newsletters', { email });
+      const response = await axios.post('https://squad-gguk.onrender.com/api/public/email-newsletters', { email });
       // console.log('status:', response.data);
 
       if (response?.data?.message) {
-        window.location.href = 'https://app.betasquad.io/';
+        window.location.href = 'https://app.trysquad.today/';
       }
 
     } catch (error) {
       // console.error('error:', error.response.data.issue.email);
       if (error?.response?.data?.issue?.email) {
-        window.location.href = 'https://app.betasquad.io/';
+        window.location.href = 'https://app.trysquad.today/';
       }
     }
 
