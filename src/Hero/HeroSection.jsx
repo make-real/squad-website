@@ -48,21 +48,21 @@ function HeroSection() {
       <Navbar />
       <div className="flex flex-col items-center justify-center max-w-5xl px-10 mx-auto mb-10 main-hero-section gap-y-2 py-4 md:px-10 xl:px-0">
         <div className="flex flex-col hero-content lg:px-5 gap-y-5">
-          <p className="mx-auto text-sm font-semibold text-center text-white tag">
+          <p className="mx-auto mt-8 text-sm font-semibold text-center text-white tag">
             ✨Your AI Task Manager✨
           </p>
-          <h1 className="text-black text-center  text-6xl heroTitleFont leading-[1.133]">
+          <h1 className="text-black text-center heroTitleFont leading-[1.133] text-4xl lg:text-4lg xl:text-6xl">
             Squad AI <span className="text-[#FB397F]"> Automate </span> your
             team's task Management.
           </h1>
-          <p className="text-m lg:text-lg max-w-[16rem] mx-auto md:max-w-xl md:mx-auto lg:max-w-xl text-[#000] text-center">
+          <p className="text-m lg:text-lg mx-auto md:max-w-m md:mx-auto lg:max-w-xl text-[#000] text-center">
             {/* From now on you just input the list of task, AI creates a Title, Description,
             posible solutions, estimate time, assign task to teams and do more. */}
             - "Be honest, do you really have the time to manage all the task for
             your team. 🤔 If not then Squad AI is the perfect solution for you.
             👍 Give it a try - you will thank me later. 🙏"
           </p>
-          <div className="flex items-center justify-center w-full max-w-lg mx-auto input-form lg:justify-start gap-x-1 lg:gap-x-5 mt-2">
+          <div className="flex items-center justify-center w-full max-w-lg mx-auto flex-col gap-y-2 md:flex-row input-form lg:justify-start gap-x-1 lg:gap-x-5 mt-2">
             <div className="w-full">
               <input
                 type="email"

@@ -12,7 +12,7 @@ function BenefitSection() {
   const benefitSectionData = [
     {
       image: teams,
-      title: "✨ Small Teams & Indie Hackers' Savior ✨",
+      title: "Small Teams & Indie Hackers' Savior ✨",
       description:
         "If you run a design/development/VA agencies then Squad AI is the game changer for you.",
     },
@@ -30,7 +30,7 @@ function BenefitSection() {
     },
     {
       image: ai,
-      title: "💪 Supercharge Your Team with GPT-4",
+      title: "Supercharge Your Team with GPT-4 💪",
       description:
         "Does your team asks for gpt-4. Now everyone on your team can use GPT-4 with Squad AI.",
     },

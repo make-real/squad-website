@@ -36,7 +36,7 @@ function NewsLetter() {
   return (
     <section className="max-w-4xl px-5 py-10 mx-auto cta__section lg:px-0">
       <div className="flex flex-col items-center justify-center p-10 mx-auto bg-white rounded-2xl gap-y-5">
-        <h3 className="max-w-4xl mx-auto text-2xl font-bold text-center text-black heroTitleFont md:text-2xl lg:text-2xl">
+        <h3 className="max-w-4xl mx-auto font-bold text-center text-black heroTitleFont text-2xl lg:text-2xl">
           🤖 AI Takes the Headache , Your Team Skyrockets the Building 🚀
         </h3>
 
