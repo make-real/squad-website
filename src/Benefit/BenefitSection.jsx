@@ -38,7 +38,7 @@ function BenefitSection() {
   return (
     <section className="overflow-hidden benefit__section">
       <div className="text-black text-center max-w-4xl pt-24 pb-10 px-5 mx-auto heroTitleFont text-4xl leading-[113.3%]">
-        🏆 The Ultimate Tool Your Team Has Been Searching For 🔑
+        🏆 The Ultimate Tool Your Team Has Been Searching For
       </div>
 
       <div className="relative grid max-w-4xl px-5 py-10 mx-auto md:grid-cols-2 gap-y-14 md:gap-y-10 lg:py-14 gap-x-10">
